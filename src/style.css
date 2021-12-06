@@ -13,16 +13,27 @@ https://www.w3schools.com/css/default.asp
   float: right;
 }
 
-.buttonBlock{
+.button{
     /*Give your button block some style!
     Add color, change the border, and
     change the size using CSS styling*/
     background-color:lightblue;
     border:solid;
+    border-color:blue;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
     width:30%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color:blue;
+    color: white;
+
 }
 
 .sliderBlock{
@@ -105,4 +116,12 @@ https://www.w3schools.com/css/default.asp
 .documentation_code {
   padding: 5px;
   background-color: lightyellow;
+}
+
+.center {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 20%;
+  height: 20%;
 }
