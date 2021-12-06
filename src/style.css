@@ -13,7 +13,7 @@ https://www.w3schools.com/css/default.asp
   float: right;
 }
 
-.button{
+.buttonrl{
     /*Give your button block some style!
     Add color, change the border, and
     change the size using CSS styling*/
@@ -24,18 +24,39 @@ https://www.w3schools.com/css/default.asp
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    width:30%;
-    transition-duration: 0.4s;
+    width:50%;
+    transition-duration: 0.6s;
     cursor: pointer;
     border-radius: 5px;
 }
 
-.button:hover{
+.buttontb{
+    /*Give your button block some style!
+    Add color, change the border, and
+    change the size using CSS styling*/
+    background-color:lightblue;
+    border:solid;
+    border-color:blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 10px;
+    width:70%;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttonrl:hover{
     background-color:blue;
     color: white;
 
 }
+.buttontb:hover{
+    background-color:blue;
+    color: white;
 
+}
 .sliderBlock{
     /*Give your slider block some style!
     Add color, change the border, and
@@ -124,4 +145,14 @@ https://www.w3schools.com/css/default.asp
   padding-left: 10px;
   width: 20%;
   height: 20%;
+}
+
+.header {
+  font-size: 75;
+  text-align: center;
+}
+
+.paragraph{
+  font-size: 50;
+  text-align: center;
 }
