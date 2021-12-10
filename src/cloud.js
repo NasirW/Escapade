@@ -10,6 +10,7 @@ Purpose:
   using Cloud-based storage (Airtable or SystemLink)
 */
 
+
 // Service Dock connections (global variables)
 var cloud_connection; // Service Dock pointer for connecting to cloud service
 var cloud_connection_type; // "Airtable" and "SystemLink" are two allowed types
@@ -18,6 +19,8 @@ var mySPIKE; // the first SPIKE connection in the array of SPIKE connections
 
 // how often to check (poll) cloud data for updates
 var monitor_cloud_frequency = 2000; // in ms
+
+
 
 // this is a global "interactive HTML" variable
 var iHTML = null; // see: function interactiveHTML()
