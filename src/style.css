@@ -13,21 +13,41 @@ https://www.w3schools.com/css/default.asp
   float: right;
 }
 
+.b1{
+    background-image: url(../img/JungleNew.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    //opacity: 0.3;
+
+}
+
+.b2{
+    background-image: url(../img/remote2.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    //opacity: 0.3;
+
+}
 .buttonrl{
     /*Give your button block some style!
     Add color, change the border, and
     change the size using CSS styling*/
-    background-color:lightblue;
+    background-color:rgb(140, 217, 140);
     border:solid;
-    border-color:rgb(0, 110, 255);
+    border-color:rgb(50, 150, 50);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
     width:50%;
-    transition-duration: 0.6s;
+    transition-duration: 0.3s;
     cursor: pointer;
     border-radius: 5px;
+    box-shadow: 0 9px rgb(25, 80, 25);
     
 }
 
@@ -35,52 +55,73 @@ https://www.w3schools.com/css/default.asp
     /*Give your button block some style!
     Add color, change the border, and
     change the size using CSS styling*/
-    background-color:lightblue;
+    background-color:rgb(140, 217, 140);
     border:solid;
-    border-color:rgb(0, 110, 255);
+    border-color:rgb(50, 150, 50);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0px;
     padding-right: 10px;
     width:70%;
-    transition-duration: 0.6s;
+    transition-duration: 0.3s;
     cursor: pointer;
     border-radius: 5px;
+    box-shadow: 0 9px rgb(25, 80, 25);
 }
 
 .buttonrl:hover{
-    background-color:rgb(0, 110, 255);
+    background-color:rgb(50, 150, 50);
     color: white;
 
 }
 .buttontb:hover{
-    background-color:rgb(0, 110, 255);
+    background-color:rgb(50, 150, 50);
     color: white;
 
+}
+
+.buttonrl:active{
+    background-color: green;
+    box-shadow: 0 8px #666;
+    transform: translateY(9px);
+
+}
+.buttontb:active{
+    background-color: #3e8e41;
+    box-shadow: 0 8px #666;
+    transform: translateY(8px);
+    
 }
 .submit{
     /*Give your button block some style!
     Add color, change the border, and
     change the size using CSS styling*/
-    background-color:lightblue;
+    background-color:rgb(140, 217, 140);
     border:solid;
-    border-color:rgb(0, 110, 255);
-    padding-top: 100px;
-    padding-bottom: 100px;
-    width:100%;
-    lenghth:100%;
-    transition-duration: 0.6s;
+    border-color:rgb(50, 150, 50);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition-duration: 0.3s;
     cursor: pointer;
     border-radius: 5px;
+    border-width: 6px;
     font-size: 100px;
     font-family: papyrus;
+    margin:0 auto;
+    text-decoration: underline rgb(140, 217, 140);
+    display:flex; 
     
 }
 .submit:hover{
-    background-color:rgb(0, 110, 255);
-    color: greenyellow;
+    background-color:rgb(50, 150, 50);
+    color: white;
+    text-decoration: underline rgb(50, 150, 50);
 
 }
+
+
 
 
 .sliderBlock{
@@ -164,6 +205,12 @@ https://www.w3schools.com/css/default.asp
   padding: 5px;
   background-color: lightyellow;
 }
+.bcenter{
+    margin: auto;
+    
+
+}
+
 
 .center {
   padding-top: 10px;
@@ -177,10 +224,12 @@ https://www.w3schools.com/css/default.asp
   font-size: 75;
   text-align: center;
   font-family: papyrus;
+  color: white;
 }
 
 .paragraph{
   font-size: 50;
   text-align: center;
   font-family: papyrus;
+  color: white;
 }
