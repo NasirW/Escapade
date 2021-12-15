@@ -60,7 +60,7 @@ https://www.w3schools.com/css/default.asp
     border-color:rgb(50, 150, 50);
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 0px;
+    padding-left: 10px;
     padding-right: 10px;
     width:70%;
     transition-duration: 0.3s;
@@ -81,7 +81,7 @@ https://www.w3schools.com/css/default.asp
 }
 
 .buttonrl:active{
-    background-color: green;
+    background-color: #3e8e41;
     box-shadow: 0 0px #666;
     transform: translateY(9px);
 
