@@ -5,7 +5,36 @@
 	  <script src="../src/secret.js" charset="utf-8"></script>
 	  <script src="../src/cloud.js" charset="utf-8"></script>
 	  <link rel="stylesheet" href="../src/style.css" />
+      <script>
+        
+			// HERE IS THE CODE FOR DISPLAYING THE NAME
+			function display_name() {
+				// get name from the database
+				var new_name = cloud_get('player_name');
+				// show it in the HTML
+				document.getElementById('display_name').innerHTML = new_name;
+			}
+
+			// HERE IS THE CODE FOR SAVING THE NAME
+			function save_name() {
+				// get the new name
+				var new_name = document.getElementById('player_input').value;
+				// update the cloud value
+				cloud_update('player_name', new_name);
+			}
+			
+			// HERE IS THE CODE FOR ONLOAD OF THE PAGE
+			// - note: this happens after the connection to database is set up
+			function onload_post() {
+				// if cloud connection is active, then display the name
+				// else wait 100ms and try again...
+				if (cloud_connection.isActive()) { display_name(); }
+				else { setTimeout(onload_post, 100); }
+			}
+		
+    </script>
 	</head>
+    
 <body class=b2>
 
 	<!-- SERVICE DOCK -->
@@ -13,8 +42,8 @@
 		<service-airtable id="service_airtable" tablename="myProject"></service-airtable>
 	</div>
 
-  <h1 class='header'>The Great Escapade!!!</h1>
- <p class = "paragraph" id="text"></p>
+  <h1 class='header'> <span id='display_name'></span>'s Great Escapade!!!</h1>
+ <!-- <p class = "paragraph">Oh no, you're stuck in a Maze, , <span id='display_name'></span>!</p> -->
 
 
     <p class='paragraph' >Use the buttons below to control the robot and find an escape…</p>
